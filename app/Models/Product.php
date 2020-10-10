@@ -19,4 +19,8 @@ class Product extends Model
         'name', 'slug', 'pic','category_id','brand','description','specifications','compactible_models'
     ];
 
+    public function category(){
+        return $this->belongsTo('App\Models\Category');
+    }
+
 }
